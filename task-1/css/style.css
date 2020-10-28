@@ -1,0 +1,336 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.container
+{
+    margin:100px 0;
+    margin: 0 auto;
+}
+
+
+/*Header*/
+
+
+.header
+{
+ background-image: url('../images/bkg.jpeg');
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+i{
+    cursor: pointer;
+}
+.nav-1
+{
+    display: flex;
+    color:white;
+    justify-content: space-between;
+    padding: 20px 150px;
+    border-bottom: 1px dotted grey;
+}
+.nav-1 .leftnav i
+{
+ margin-right: 9px;
+}
+.nav-1 .rightnav
+{
+    float: right;
+    font-size: 16px;
+}
+.nav-1 .rightnav span:not(:last-child){
+    margin-right: 30px;
+}
+.nav-1 .rightnav i{
+    margin-right: 4px;
+}
+
+
+
+
+.nav-2
+{
+    display: flex;
+    color:white;
+    justify-content: space-between;
+    padding: 25px 150px;
+}
+.nav-2 .leftnav{
+    font-size:24px;
+    display: flex;
+    align-items: center;
+}
+.nav-2 .leftnav span{
+    margin-left:25px;
+    color:rgb(30, 148, 30);
+}
+.nav-2 .rightnav{
+    display: flex;
+    align-items: center;
+}
+.nav-2 .rightnav a{
+    color: white;
+    font-size:16px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-2 .rightnav a:not(:last-child){
+    margin-right: 20px;
+}
+
+.nav-2 .rightnav a i{
+    font-size: 10px;
+    position: relative;
+    transform: translateY(-20%);
+}
+
+
+
+
+.nav-body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-body .upper
+{
+    text-align: center;
+    margin:35px 0;
+    padding:80px 0;
+    color:white
+}
+
+.nav-body .p1
+{
+    font-size:44px;
+    margin-bottom:10px;
+    font-family: 'Dancing Script',cursive;
+    font-weight: lighter;
+    /* font-family: 'Bonbon', cursive; */
+    font-family: 'Felipa', cursive;
+}
+.nav-body .p2
+{
+    font-size:43px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.nav-body button{
+    background-color: white;
+    border-radius:10px;
+    color:rgb(7, 180, 7);
+    outline: none;
+    border:none;
+    margin-bottom:50px;
+    font-size:18px;
+    padding: 10px 25px;
+}
+
+
+
+/*Recipes*/
+
+
+.content
+{
+   margin-top: 100px;
+   font-weight: normal;
+   position: relative;
+}
+.icons span{
+    margin-right:30px;
+}
+
+.icons i{
+    margin-right:12px;
+}
+
+.content img {
+    width:300px;
+    background-size: cover;
+}
+
+.card
+{
+    width:80%;
+    margin:30px auto;
+    border:1px solid rgb(209, 208, 208);
+    /* margin-bottom:50px ;  */
+    display: flex;
+    
+}
+.card-text
+{
+    margin:20px 0;
+    line-height:1.5;
+}
+.card-body h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.card-body
+{
+  padding:18px 30px; 
+}
+
+.card-body button{
+    outline:none;
+    border:none;
+    font-size: 14px;
+    color:white;
+    background-color:rgb(52, 172, 52);
+    text-transform: uppercase;
+    padding:10px 15px;
+}
+.card:hover{
+    border: 1px solid rgb(7, 180, 7);
+}
+.card:hover.card-body h2{
+    color:rgb(52, 172, 52);
+}
+.card:hover button{
+    border:1px solid rgb(52, 172, 52);
+    color:rgb(52, 172, 52);
+    background-color: white;
+}
+button:hover
+{
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*Footer*/
+
+.footer
+{
+    margin-top: 100px;
+}
+.copywright
+{
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+
+
+/* box */
+.box{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* first */
+.box .first
+{
+    display: flex;
+    padding:30px 0;
+    color: white;
+    justify-content: space-around;
+    background-color:rgb(52, 172, 52);
+}
+
+.box .first .days .item p{
+    margin-bottom: 0;
+    /* line-height: 0.5; */
+}
+
+.box .first .days
+{
+    display: flex;
+    padding:2px 0;
+    /* align-items: center; */
+}
+.box .first .days .item
+{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding:0 15px;
+    
+}
+.box .first .days .item:not(:last-child)
+{
+    border-right: 1px solid white;
+}
+
+
+/* second */
+
+.box .second
+{
+ background-color: black;
+ display: flex;
+ color:white;
+ justify-content: space-around;
+ padding:50px 0;
+   
+}
+.box .second .loc{
+    display: flex;
+}
+
+.box .second .loc .contact,.box .second .loc .social
+{
+    display: flex;
+    margin-right:42px;
+    flex-direction: column;
+}
+.box .second .heading
+{
+    color:rgb(52, 172, 52);
+    margin-bottom:25px;
+    text-transform: uppercase;
+}
+.box .second .loc .text{
+    margin-bottom: 20px;
+}
+.box .second .loc .text i{
+    margin-right:15px;
+    color: rgb(52, 172, 52);
+}
+
+
+
+/* news */
+
+.box .second .news p{
+    margin-bottom:14px;
+}
+
+.box .second form input
+{
+    width:73%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    margin-bottom: 15px;
+
+}
+::placeholder
+{
+    color: rgb(31, 30, 30);
+}
+.box .second form button
+{
+    width: 73%;
+    background-color: rgb(52, 172, 52);
+    padding: 14px 20px;
+    outline: none;
+    border: none;
+    color: white;
+}
